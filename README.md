@@ -59,7 +59,6 @@ The Ackermann function is defined as:
 			
 
 
-
 Since the computation of such an Ackermann number can take very much time, you should
 use a separate thread for the computation in order to keep your program responsive.
 Only the JavaFX thread is allowed to change the nodes in the interface. An attempt of any
