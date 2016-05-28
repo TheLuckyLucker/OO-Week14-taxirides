@@ -1,5 +1,10 @@
 package taxirides;
-
+/**
+ * 
+ * @author Tiko Huizinga - s44608988
+ * @author Conny Blach - s4329872
+ *
+ */
 public class Simulation {
 
   public static final int TRAIN_TRIPS = 10;

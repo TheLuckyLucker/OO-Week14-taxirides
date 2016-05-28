@@ -1,6 +1,8 @@
 package taxirides;
 
 /**
+ * @author Tiko Huizinga - s44608988
+ * @author Conny Blach - s4329872
  * Class that holds the number of persons arriving by train at the station and
  * waiting for a taxi*
  */

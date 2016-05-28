@@ -1,5 +1,10 @@
 package taxirides;
-
+/**
+ * 
+ * @author Tiko Huizinga - s44608988
+ * @author Conny Blach - s4329872
+ *
+ */
 import java.util.concurrent.TimeUnit;
 
 public class Taxi {

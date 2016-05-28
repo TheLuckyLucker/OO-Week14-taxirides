@@ -6,8 +6,10 @@
 package taxirides;
 
 /**
+ * 
+ * @author Tiko Huizinga - s44608988
+ * @author Conny Blach - s4329872
  *
- * @author Sjaak
  */
 public class Train {
   private int nrOfPassengers;
