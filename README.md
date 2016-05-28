@@ -50,10 +50,13 @@ in the interface.
 
 
 The Ackermann function is defined as:
-			{n+1						if m==0
-Ackermann(m,n) = 	{Ackermann(m-1, 1)				if m > 0 and n = 0
 
-			{Ackermann(m-1, Ackermann(m, n-1))		if m > 0 and n > 0
+
+	Ackermann(m,n) =
+			n+1										if m==0
+			Ackermann(m-1, 1)						if m > 0 and n = 0
+			Ackermann(m-1, Ackermann(m, n-1))		if m > 0 and n > 0
+			
 
 
 
