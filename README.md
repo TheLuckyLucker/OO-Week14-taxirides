@@ -1,4 +1,4 @@
-# Practicum OO – lente 2016 Opgave 14
+# Practicum OO â€“ lente 2016 Opgave 14
 #### Goals
 This exercise consists of three programs with threads. Use the 6 steps approach to designing concurrent
 programs outlined in the lectures and available on BlackBoard. After this exercise you should
@@ -7,9 +7,10 @@ be able to:
 + stop threads;
 + use the Worker interface and the class Task.
 
-## Simulating trains and taxis transporting people to and from a
-station
-### Introduction
+## Simulating trains and taxis transporting people to and from a station
+
+### Introduction
+
 In this exercise we will simulate the process of arrivals of a train with persons and the transportation
 of them to a certain location by taxis. We start with a sequential solution which must be
 changed to a concurrent version in the assignment.
@@ -29,7 +30,8 @@ Method takePassengers() of class Taxi tries to take as many passengers as possib
 its capacity).
 
 ### Assignment1:
-Use the classes of the sequential version as the basis for a new concurrent version.
+Use the classes of the sequential version as the basis for a new concurrent version.
+
 
 ## 2: Stopping Threads
 Although each Thread has a method stop, this is not the way to stop a thread. See the lecture
@@ -43,12 +45,14 @@ the task.
 ### Assignment2: 
 Make a JavaFX program with an interface as depicted in Figure 2. When the start button is
 pressed the JavaFX program starts computing the Ackermann function with the arguments specified
-in the interface.
+in the interface.
+
 
 
 The Ackermann function is defined as:
 			{n+1						if m==0
-Ackermann(m,n) = 	{Ackermann(m-1, 1)				if m > 0 and n = 0
+Ackermann(m,n) = 	{Ackermann(m-1, 1)				if m > 0 and n = 0
+
 			{Ackermann(m-1, Ackermann(m, n-1))		if m > 0 and n > 0
 
 
@@ -92,8 +96,10 @@ are intended for repeating workers, and are not considered here
 
 #### The abstract Class Task<V>
 The abstract Class Task<V> is meant for one-shot workers. The state of Task objects is defined
-by the enumeration type Worker.State and can be depicted as in Figure 3.
-The class Task<V> implements the Worker interface and adds many methods like:
+by the enumeration type Worker.State and can be depicted as in Figure 3.
+
+The class Task<V> implements the Worker interface and adds many methods like:
+
 protected abstract V call( ) throws Exception
 public fin al boolean cancel( )
 public boolean isCancelled( )
@@ -113,12 +119,14 @@ void setOnFailed(EventHandler<WorkerStateEvent> value)
 A Task can be executed by a thread similar to a runnable. The advantage of a Task is that it can
 be cancelled and that its progress can be determined. Note that a Task has an abstract method
 V call() throws Exception instead of the void run() of the Runnable interface. Hence, you
-should define call instead of run.
+should define call instead of run.
+
 
 ### Assignment3:
 Use the class Task and its native methods cancel() and isCancelled() to implement the interruptible
 Ackermann computation from the previous section. Use setOnSucceeded with an
-appropriate handler, or override succeeded() to update the GUI.
+appropriate handler, or override succeeded() to update the GUI.
+
 
 
 ## Deadline
